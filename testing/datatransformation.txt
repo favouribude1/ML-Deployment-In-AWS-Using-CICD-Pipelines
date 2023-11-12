@@ -74,7 +74,7 @@ class DataTransformation:
 
             preprocessor = ColumnTransformer(
                 [
-                ("num_pipeline", num_pipeline, numerical_columns),
+                ("num_pipeline", num_pipeline, numerical_columns)
                 ("cat_pipeline", cat_pipeline, categorical_columns)
 
                 ]
@@ -87,7 +87,7 @@ class DataTransformation:
             
 
 # starting the data transformation techniques inside this function by initializing
-    def initiate_data_transformation(self, train_path, test_path):
+    def initiate_data_transform(self, train_path, test_path):
         try:
             #reading the train and test data
             train_df = pd.read_csv(train_path)
