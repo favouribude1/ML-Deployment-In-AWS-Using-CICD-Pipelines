@@ -1,1 +1,1 @@
-An end to end machine learning project and mlops
+An End To End ML Project - Create Prediction Pipeline Using Flask Web APP
