@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Exam Performance Indicator</title>
+<html>
+<body>
+    <style>
+        body {
+            background-image: url("templates/bbvv.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #333; /* Dark gray color */
+            color: #fff; /* Text color (white) */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-image: url("templates/bbvv.jpg");
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Add your additional styles here */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="background-color: antiquewhite; color: black; ">
+      
+            <legend >End To End ML Project-Create Prediction Pipeline Using Flask Web APP</legend>
+        </h1>    
+    <br>
+    <br>
+   
+       <form action="{{ url_for('predict_datapoint')}}" method="post">
+        <h2>
+            <legend>Student Exam Performance Indicator</legend>
+        </h2>
+        
+        <div class="container">
+            <label class="form-label">Gender</label>
+            <select class="form-control" name="gender" placeholder="Enter you Gender" required>
+                <option class="placeholder" selected disabled value="">Select your Gender</option>
+                <option value="male">
+                    Male
+                </option>
+                <option value="female">
+                    Female
+                </option>
+            </select>
+        </div>
+        <div class="container">
+            <label class="form-label">Race or Ethnicity</label>
+            <select class="form-control" name="ethnicity" placeholder="Enter you ethnicity" required>
+                <option class="placeholder" selected disabled value="">Select Ethnicity</option>
+                <option value="group A">
+                    Group A
+                </option>
+                <option value="group B">
+                    Group B
+                </option>
+                <option value="group C">
+                    Group C
+                </option>
+                <option value="group D">
+                    Group D
+                </option>
+                <option value="group E">
+                    Group E
+                </option>
+            </select>
+        </div>
+        <div class="container">
+            <label class="form-label">Parental Level of Education</label>
+            <select class="form-control" name="parental_level_of_education"
+                placeholder="Enter you Parent Education" required>
+                <option class="placeholder" selected disabled value="">Select Parent Education</option>
+                <option value="associate's degree">
+                    associate's degree
+                </option>
+                <option value="bachelor's degree">
+                    bachelor's degree
+                </option>
+                <option value="high school">
+                    high school
+                </option>
+                <option value="master's degree">
+                    master's degree
+                </option>
+                <option value="some college">
+                    some college
+                </option>
+                <option value="some high school">
+                    some high school
+                </option>
+            </select>
+        </div>
+        <div class="container">
+            <label class="form-label">Lunch Type</label>
+            <select class="form-control" name="lunch" placeholder="Enter you Lunch" required>
+                <option class="placeholder" selected disabled value="">Select Lunch Type</option>
+                <option value="free/reduced">
+                    free/reduced
+                </option>
+                <option value="standard">
+                    standard
+                </option>
+            </select>
+        </div>
+        <div class="container">
+            <label class="form-label">Test preparation Course</label>
+            <select class="form-control" name="test_preparation_course" placeholder="Enter you Course"
+                required>
+                <option class="placeholder" selected disabled value="">Select Test_course</option>
+                <option value="none">
+                    None
+                </option>
+                <option value="completed">
+                    Completed
+                </option>
+            </select>
+        </div>
+        <div class="container">
+            <label class="form-label">Writing Score out of 100</label>
+            <input class="form-control" type="number" name="reading_score"
+                placeholder="Enter your Reading score" min='0' max='100' />
+        </div>
+        <div class="container">
+            <label class="form-label">Reading Score out of 100</label>
+            <input class="form-control" type="number" name="writing_score"
+                placeholder="Enter your Reading Score" min='0' max='100' />
+        </div>
+        <div class="container">
+            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
+        </div>
+    </div>
+    </form>
+    <div>
+        <h2>
+            <p style="background-color: antiquewhite; color: black; text-align: center;">THE  prediction is : {{results}}</p>
+        </h2>
+    </div>
+    <br>
+    <br>
+    <section class="u-backlink u-clearfix u-grey-80", style=" background-color: aliceblue; text-align: center;">
+        <br>
+        <a class="u-link" href="https://www.linkedin.com/in/favouribude" target="_blank">
+          <span>Designed & Developed by Favour Ibude</span>
+        </a>
+        <p class="u-text" style="color:black;">
+          <span>Connect with me on LinkedIn @favour ibude</span>
+        </p>
+        <a class="u-link" href="https://github.com/favouribude1/mlopsproject" target="_blank">
+          <span>Check my github repo @favouribude1</span>
+        </a>. 
+      </section>
+    
+</body>
+</html>
